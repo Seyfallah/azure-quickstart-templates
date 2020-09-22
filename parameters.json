@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "adminlocal"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "dnsLabelPrefix": {
+            "value": "rdweb"
+        },
+        "publicIpAddressName": {
+            "value": "rdsgw-pip"
+        },
+        "publicIpResourceGroupName": {
+            "value": "RDS-RG"
+        },
+        "publicIPsku": {
+            "value": "Basic"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "DomainName": {
+            "value": "test.local"
+        },
+        "numberOfRdshInstances": {
+            "value": 1
+        },
+        "ADVMSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "RDSHVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "brokerVmVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "gatewayVmVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "adVmName": {
+            "value": "ADDC01"
+        },
+        "RDSHName": {
+            "value": "RDSHost"
+        },
+        "brokervmName": {
+            "value": "RDSBroker"
+        },
+        "gatewayvmName": {
+            "value": "RDSGateway"
+        },
+        "location": {
+            "value": "eastus2"
+        }
+    }
+}
